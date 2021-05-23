@@ -8,9 +8,8 @@ source /server/aur.sh
 pacman_packages="jre8-openjdk-headless jre11-openjdk-headless screen rsync"
 
 # install compiled packages using pacman
-if [[ ! -z "${pacman_packages}" ]]; then
-	pacman -S --needed $pacman_packages --noconfirm
-fi
+pacman -S --needed $pacman_packages --noconfirm
+pacman -S java-runtime-common
 
 export JAVA_VERSION=$(echo "${JAVA_VERSION}" | sed -e 's~^[ \t]*~~;s~[ \t]*$~~')
 if [[ ! -z "${JAVA_VERSION}" ]]; then
