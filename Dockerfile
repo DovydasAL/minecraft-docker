@@ -4,6 +4,9 @@ VOLUME /server
 
 EXPOSE 25566
 
-RUN ./server/start.sh
+ADD * /server/
+
+RUN chmod +x /server/start.sh
+RUN /server/start.sh
 
 
