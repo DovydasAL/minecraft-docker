@@ -33,4 +33,4 @@ else
 fi
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
-java -server -Xms5G -Xmx16G -XX:MaxPermSize=128M -jar forge-1.12.2-14.23.5.2846-universal.jar
+java -server -Xms5G -Xmx16G -XX:MaxPermSize=128M -jar /server/forge-1.12.2-14.23.5.2846-universal.jar
