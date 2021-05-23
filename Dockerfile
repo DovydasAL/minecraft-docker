@@ -7,7 +7,8 @@ EXPOSE 25566
 ADD * /server/
 
 RUN chmod +x /server/start.sh
-RUN chmod +x /server/forge-1.12.2-14.23.5.2846-universal.jar
+RUN chmod -R 777 /server
 RUN sh /server/start.sh
+RUN ls -l /server/
 
 CMD ["/bin/bash", "/server/run.sh"]
