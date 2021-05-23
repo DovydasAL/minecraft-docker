@@ -7,6 +7,6 @@ EXPOSE 25566
 ADD * /server/
 
 RUN chmod +x /server/start.sh
-CMD ["/bin/bash", "/server/start.sh"]
+RUN sh /server/start.sh
 
-
+CMD ["/bin/bash", "/server/run.sh"]
