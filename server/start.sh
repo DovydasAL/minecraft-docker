@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source aur.sh
+
 # define pacman packages
 pacman_packages="jre8-openjdk-headless jre11-openjdk-headless screen rsync"
 
