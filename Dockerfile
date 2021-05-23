@@ -7,6 +7,6 @@ EXPOSE 25566
 ADD * /server/
 
 RUN chmod +x /server/start.sh
-RUN /server/start.sh
+RUN sh /server/start.sh
 
 
