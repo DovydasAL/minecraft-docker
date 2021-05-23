@@ -7,6 +7,8 @@ source /server/aur.sh
 # define pacman packages
 pacman_packages="jre8-openjdk-headless jre11-openjdk-headless screen rsync"
 
+curl -fsSL "https://repo.archlinuxcn.org/x86_64/glibc-linux4-2.33-4-x86_64.pkg.tar.zst" | bsdtar -C / -xvf -
+
 # install compiled packages using pacman
 pacman -S --needed $pacman_packages --noconfirm
 pacman -S java-runtime-common
