@@ -1,5 +1,7 @@
 #!/bin/bash
 
+aur_packages=""
+
 source /server/aur.sh
 
 # define pacman packages
