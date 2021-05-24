@@ -11,4 +11,4 @@ RUN chmod -R 777 /server
 RUN sh /server/start.sh
 RUN ls -l /server/
 
-CMD ["/bin/bash", "/server/run.sh"]
+ENTRYPOINT ["/bin/bash", "/server/run.sh"]
